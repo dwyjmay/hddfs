@@ -8,12 +8,15 @@ https://www.flaticon.com/kr/ 에서 svg형식의 파일을 적용하였습니다
 
 
 html 구조
-
-
 */
 
+/* var */
+$black :#222;
+$pc-layout:1356px;
+
+
 /* reset */
-*{padding:0; margin:0;}
+*{padding:0; margin:0; color:#222;}
 li{list-style: none;}
 button{
   background: none; border:none;
@@ -21,31 +24,33 @@ button{
     cursor: pointer;
   }
 }
+a{
+  color:#222;
+  text-decoration: none;
+  &:hover,&:active,&:visited{
+    text-decoration: none;
+  }
+}
 
-/* var */
-$pc-layout:1356px;
 
 /*layout */
-
-
 header{
   min-width: $pc-layout;
   > .header-wrap{
     max-width: $pc-layout;
     width: 100%; margin:0 auto;
-    display: grid;
-    grid-template-columns: 24px 200px 1fr 300px;
+    display: grid; align-items: center;
+    grid-template-columns: calc(34px + 20px) 200px 1fr 300px;
     grid-template-rows: auto 62px;
     grid-template-areas:
           "utils utils utils utils"
-          "gnb logo search otehrs"
+          "gnb logo search others"
   ;
   }
   .utils{
     grid-area: utils; height: calc(12px + 20px + 12px);
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: space-between; align-items: center;
     min-width: $pc-layout;
-    background: #c9c9fd;
     .box{
       display: flex; align-items: center; gap:8px;
     }
@@ -72,12 +77,55 @@ header{
         &.active{
           opacity: 1;
         }
-
-
       }
     }
     .exchange-rate{
       font-size: 14px;
     }
+    .menu{
+      display: flex; gap:8px;
+      a{
+        font-size: 14px;
+        +a{
+          position: relative;
+          display:block; padding-left: 8px;
+          &:before{
+            content: ''; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+            width: 1px; height:0.8em;
+            background: #aaa;
+          }
+        }
+      }
+
+    }
+  }
+  #btnGnb{
+    width: 34px; height: 34px;
+    background-image: url("data:image/svg+xml,%3Csvg width='256px' height='256px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3EMenu%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Menu'%3E%3Crect id='Rectangle' fill-rule='nonzero' x='0' y='0' width='24' height='24'%3E%3C/rect%3E%3Cline x1='5' y1='7' x2='19' y2='7' id='Path' stroke='%230C0310' stroke-width='2' stroke-linecap='round'%3E%3C/line%3E%3Cline x1='5' y1='17' x2='19' y2='17' id='Path' stroke='%230C0310' stroke-width='2' stroke-linecap='round'%3E%3C/line%3E%3Cline x1='5' y1='12' x2='19' y2='12' id='Path' stroke='%230C0310' stroke-width='2' stroke-linecap='round'%3E%3C/line%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .others{
+    display: flex; gap:8px; align-items: center; justify-content: flex-end;
+    li{
+      a{display: block; font-size: 14px;}
+    }
+  }
+  .search-wrap{
+    grid-area: search;
+    .search{
+      position: relative; margin: 0 auto;
+      width: 60%;min-width: 300px;
+      input{
+        width: 100%; height: 50px;
+        padding-left: 20px;
+        border: 1px solid #eee; border-radius: 40px;
+      }
+      button{
+        position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+        width: 24px; height: 24px;
+      }
+    }
+
   }
 }
