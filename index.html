@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서윤진 | TYPE2-C | 현대면세점</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="header-wrap">
+            <div class="utils">
+                <div class="box">
+                    <div class="lang">
+                        <button type="button" class="btn-lang" aria-haspopup="listbox" aria-expanded="false">한국어
+                        </button>
+                        <ul class="lst-lang">
+                            <li>
+                                <button type="button">한국어</button>
+                            </li>
+                            <li>
+                                <button type="button">중국어</button>
+                            </li>
+                            <li>
+                                <button type="button">영어</button>
+                            </li>
+                        </ul>
+                    </div><!--//lang-->
+
+                    <div class="exchange-rate">
+                        <span>$1 = 1,129원</span>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <a href="">로그인</a>
+                    <a href="">회원가입</a>
+                    <a href="">고객센터</a>
+                    <a href="">지점안내</a>
+                </div><!--//menu-->
+            </div><!--//utils-->
+
+            <button type="button" aria-label="GNB"></button>
+            <div class="logo"><img src="" alt=""></div>
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력하세요" value="봄맞이🌹 신상품 20% 할인 행사">
+                <button type="button">검색</button>
+            </div>
+            <ul class="others">
+                <li><a href="">장바구니</a></li>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">큐레이션</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+</div>
+
+<script>
+    const btnLang = document.querySelector('.btn-lang');
+    const lstLang = document.querySelector('.lst-lang')
+    btnLang.addEventListener('click',function(){
+        const isExpanded = btnLang.getAttribute('aria-expanded') === 'true';
+
+        if(!isExpanded){ // 팝업 닫힌 경우
+            const height =lstLang.scrollHeight;
+            lstLang.style.height=`${height}px`;
+            lstLang.classList.add('active')
+
+            btnLang.setAttribute('aria-expanded',true)
+        }else{
+            lstLang.classList.remove('active')
+            setTimeout(function(){
+                lstLang.style.height=0;
+                btnLang.setAttribute('aria-expanded',false)
+            },400)
+
+        }
+
+    })
+</script>
+</body>
+</html>
