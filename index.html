@@ -32,7 +32,7 @@
                     <div class="exchange-rate">
                         <span>$1 = 1,129원</span>
                     </div>
-                </div>
+                </div><!--//box-->
 
                 <div class="menu">
                     <a href="">로그인</a>
@@ -47,19 +47,56 @@
             <div class="search-wrap">
                 <div class="search">
                     <input type="text" placeholder="검색어를 입력하세요" value="봄맞이🌹 신상품 20% 할인 행사">
-                    <button type="button">검색</button>
+                    <button type="button" aria-label="검색"></button>
                 </div>
             </div>
             <ul class="others">
-                <li><a href="">장바구니</a></li>
-                <li><a href="">마이페이지</a></li>
-                <li><a href="">큐레이션</a></li>
+                <li><a href="" class="btn-basket"><span class="sr-only">장바구니</span></a></li>
+                <li><a href="" class="btn-mypage"><span class="sr-only">마이페이지</span></a></li>
+                <li><a href="" class="btn-curation"><span class="sr-only">큐레이션</span></a></li>
             </ul>
         </div>
-
-
-
     </header>
+    <main>
+        <div class="key-visual" style="background-color: #eee;">
+            <div class="layout">
+                <div class="breadcrumb">
+                    <ul>
+                        <li>홈</li>
+                        <li>기획전</li>
+                        <li>사은행사</li>
+                        <li>
+                            <a href="#">
+                                라네즈 외 7개 브랜드 할인 기획전</a>
+                            <ul>
+                                <li><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fn-share">
+                    <ul>
+                        <li>
+                            <button type="button" aria-label="찜버튼"></button>
+                        </li>
+                        <li>
+                            <button type="button" aria-label="페이스북"></button>
+                        </li>
+                        <li>
+                            <button type="button" aria-label="블로그"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="visual-img">
+                    <img src="./static/images/keyvisual01.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
 </div>
 
 <script>
