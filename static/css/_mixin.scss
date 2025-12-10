@@ -1,0 +1,13 @@
+/* 말줄임  $line : 말줄임 할 문구 줄 수 지정  (default : 1 ) */
+@mixin ellipsis($line:1) {
+  width:100%;  overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: $line; -webkit-box-orient: vertical;
+  @if $line == 1 {
+    display: block;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+  }
+  @content;
+}

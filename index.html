@@ -6,7 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>서윤진 | TYPE2-C | 현대면세점</title>
+    <script src="./static/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/swiper-bundle.min.css">
 </head>
 <body>
 <div id="wrap">
@@ -28,7 +30,6 @@
                             </li>
                         </ul>
                     </div><!--//lang-->
-
                     <div class="exchange-rate">
                         <span>$1 = 1,129원</span>
                     </div>
@@ -58,69 +59,327 @@
         </div>
     </header>
     <main>
-        <div class="key-visual" style="background-color: #eee;">
-            <div class="layout">
+        <div class="key-visual" style="background-color: #C9E1FD;">
+            <div class="key-visual__layout layout">
                 <div class="breadcrumb">
-                    <ul>
+                    <ul class="breadcrumb__list">
                         <li>홈</li>
                         <li>기획전</li>
                         <li>사은행사</li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="btn-subMenu" aria-expanded="false" aria-haspopup="listbox">
                                 라네즈 외 7개 브랜드 할인 기획전</a>
-                            <ul>
-                                <li><a href="">1</a></li>
-                                <li><a href="">2</a></li>
-                                <li><a href="">3</a></li>
-                            </ul>
+                            <div class="sub-menu">
+                                <ul class="sub-menu__list">
+                                    <li><a href="">아우구스티누스 비더 단독 구매사은이벤트</a></li>
+                                    <li><a href="">정관장 구매사은 이벤트</a></li>
+                                    <li><a href="">블리브유 신규입점 사은행사</a></li>
+                                    <li><a href="">차앤박 구매사은행사</a></li>
+                                    <li><a href="">수려한 구매 사은행사</a></li>
+                                    <li><a href="">이니스프리 기획전</a></li>
+                                    <li><a href="">볼앤체인 포토리뷰 이벤트</a></li>
+                                    <li><a href="">정관장 구매사은이벤트</a></li>
+                                    <li><a href="">수려한 구매 사은행사</a></li>
+                                    <li><a href="">이니스프리 기획전</a></li>
+                                    <li><a href="">볼앤체인 포토리뷰 이벤트</a></li>
+                                    <li><a href="">정관장 구매사은이벤트</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
-                </div>
+                </div><!--//breadcrumb-->
                 <div class="fn-share">
-                    <ul>
+                    <ul class="fn-share__list">
                         <li>
-                            <button type="button" aria-label="찜버튼"></button>
+                            <button type="button" aria-label="찜버튼" class="fn-share__btn--like"></button>
                         </li>
                         <li>
-                            <button type="button" aria-label="페이스북"></button>
+                            <a href="#" class="fn-share__btn--fb"><span class="sr-only">페이스북</span></a>
                         </li>
                         <li>
-                            <button type="button" aria-label="블로그"></button>
+                            <a href="#" class="fn-share__btn--blog"><span class="sr-only">블로그</span></a>
                         </li>
                     </ul>
+                </div><!--//fn-share-->
+                <div class="visual-main">
+                    <div class="visual-txt">
+                        <span class="date">2024.07.29 ~ 재고소진시까지</span>
+                        <h2 class="title">라네즈 외 7개 브랜드 세트 상품 할인 기획전</h2>
+                        <p class="note">전 구매고객 세트 상품 구매시 40% 할인</p>
+                    </div>
+                    <div class="visual-img">
+                        <img src="./static/images/keyvisual01.png" alt="">
+                    </div>
                 </div>
-                <div class="visual-img">
-                    <img src="./static/images/keyvisual01.png" alt="">
-                </div>
+
             </div>
 
         </div>
+        <ul class="tab-menu__list">
+            <li><button type="button" class="tab-menu__item active">행사</button></li>
+            <li><button type="button" class="tab-menu__item">추천상품</button></li>
+            <li><button type="button" class="tab-menu__item">전체상품</button></li>
+        </ul>
+
+        <section class="event-item" id="eventItem01">
+            <div class="section-text__box">
+                <span class="section-flag" style="background-color:#5898D6 ">EVENT 1</span>
+                <strong class="section-title">라네즈 외 7개 브랜드 40% 할인</strong>
+                <p class="section-note">7개 브랜드의 SUN 제품을 40% 할인가에 만나보세요!</p>
+            </div>
+            <div class="brand">
+                <div class="brand__swiper swiper">
+                    <ul class="brand__list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon01.png" alt="">
+                                <span class="brand-item__name">라네즈</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon04.png" alt="">
+                                <span class="brand-item__name">오쏘몰</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon05.png" alt="">
+                                <span class="brand-item__name">센트롬</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon02.png" alt="">
+                                <span class="brand-item__name">온누리스토어</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon06.png" alt="">
+                                <span class="brand-item__name">헤어메스</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon07.png" alt="">
+                                <span class="brand-item__name">지앤씨(수입)</span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="">
+                                <img src="./static/images/brand-icon03.png" alt="">
+                                <span class="brand-item__name">솔가</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="event-item" id="eventItem02">
+            <div class="section-text__box">
+                <span class="section-flag" style="background-color:#5898D6 ">EVENT 2</span>
+                <strong class="section-title">햇살 가리는 SUN 제품 70% 할인</strong>
+                <p class="section-note">7개 브랜드의 SUN 제품을 70% 할인가에 만나보세요!</p>
+            </div>
+            <div class="product">
+                <div class="product__swiper swiper">
+                    <ul class="product__list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img01.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="">
+                                <span>라네즈 네오 에센셜 블러링 피니시 파우더</span>
+                                <div>
+                                    <span>70%</span>
+                                    <span><strong>$11.7</strong>$30</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img04.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="">
+                                <span>래디언-C 더블 액티브 브라이트닝 에센스</span>
+                                <div>
+                                    <span>70%</span>
+                                    <span><strong>$11.7</strong>$30</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img05.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="">
+                                <span>라네즈 워터슬리핑마스크 EX 70ml</span>
+                                <div>
+                                    <span>70%</span>
+                                    <span><strong>$11.7</strong>$30</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img02.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="">
+                                <span>라네즈 크림스킨 170ml</span>
+                                <div>
+                                    <span>70%</span>
+                                    <span><strong>$11.7</strong>$30</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img06.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="">
+                                <span>라네즈 스킨베일 베이스 EX_40호 듀오 세트</span>
+                                <div>
+                                    <span>70%</span>
+                                    <span><strong>$11.7</strong>$30</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span>70%</span>
+                                    <span><strong>$11.7</strong>$30</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
 
 </div>
 
 <script>
-    const btnLang = document.querySelector('.btn-lang');
-    const lstLang = document.querySelector('.lst-lang')
-    btnLang.addEventListener('click',function(){
-        const isExpanded = btnLang.getAttribute('aria-expanded') === 'true';
 
-        if(!isExpanded){ // 팝업 닫힌 경우
-            const height =lstLang.scrollHeight;
-            lstLang.style.height=`${height}px`;
-            lstLang.classList.add('active')
+    function toggleActive(target,className='active'){
+        if (!target) return false;
 
-            btnLang.setAttribute('aria-expanded',true)
-        }else{
-            lstLang.classList.remove('active')
-            setTimeout(function(){
-                lstLang.style.height=0;
-                btnLang.setAttribute('aria-expanded',false)
-            },400)
+        target.classList.toggle(className);
+    }
 
-        }
+    //하위 메뉴 리스트팝업 노출
+    function popSubMenu(button,menu){
+        const btn = document.querySelector(button);
+        const target = document.querySelector(menu);
 
+        btn.addEventListener('click',function(){
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            if(!isExpanded){ //메뉴가 닫혀 있을 경우
+                const height = target.scrollHeight;
+                target.style.height=`${height}px`
+                target.classList.add('active')
+
+                btn.setAttribute('aria-expanded',true);
+            } else{
+                target.classList.remove('active')
+                setTimeout(function(){
+                    target.style.height='';
+                },400)
+                btn.setAttribute('aria-expanded',false);
+            }
+        })
+    }
+
+
+    popSubMenu('.btn-lang','.lst-lang')
+    popSubMenu('.breadcrumb .btn-subMenu','.breadcrumb .sub-menu')
+
+    // fn-share 버튼들
+    const shareButtons = document.querySelectorAll('.fn-share__list button');
+
+    shareButtons.forEach(btn => {
+        btn.addEventListener('click', () => toggleActive(btn));
+    });
+
+
+    const brandSwiperList = document.querySelectorAll('.brand__swiper li')
+    const slideLength = 6;
+    if(brandSwiperList.length>slideLength){
+        const brandSwiper = new Swiper('.brand__swiper',{
+            slidesPerView: slideLength,
+            spaceBetween:20,
+
+            breakpoints: {
+                // when window width is >= 640px
+                320: {slidesPerView: 3,},
+                640:{slidesPerView:4},
+                1000:{slidesPerView: 6,}
+            },
+            pagination: {
+                el: ".brand .swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".brand .swiper-button-next",
+                prevEl: ".brand .swiper-button-prev",
+            },
+            on:{
+               /* init:function(){
+                    handleSlide(this);
+                },
+                slideChangeTransitionEnd:function(){
+                    stopAllVideos(this);
+                    handleSlide(this)
+                },*/
+            }
+        })
+    }
+
+
+
+    const brandSwiper = new Swiper('.product__swiper',{
+        //slidesPerView: slideLength,
+        spaceBetween:20,
+        grid: {
+            rows: 2,
+            fill: 'row' // 또는 'column' (행 우선 채우기)
+        },
+
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            },
+            1000:{
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            }
+        },
+        pagination: {
+            el: ".product .swiper-pagination",
+            type: "progressbar",
+        },
     })
+
+
 </script>
 </body>
 </html>
