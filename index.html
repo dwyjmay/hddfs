@@ -121,7 +121,7 @@
             <li><button type="button" class="tab-menu__item">전체상품</button></li>
         </ul>
 
-        <section class="event-item" id="eventItem01">
+        <!--<section class="section-item" id="eventItem00">
             <div class="section-text__box">
                 <span class="section-flag" style="background-color:#5898D6 ">EVENT 1</span>
                 <strong class="section-title">라네즈 외 7개 브랜드 40% 할인</strong>
@@ -178,26 +178,38 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
-        <section class="event-item" id="eventItem02">
+        </section>-->
+        <section class="section-item event">
             <div class="section-text__box">
-                <span class="section-flag" style="background-color:#5898D6 ">EVENT 2</span>
-                <strong class="section-title">햇살 가리는 SUN 제품 70% 할인</strong>
-                <p class="section-note">7개 브랜드의 SUN 제품을 70% 할인가에 만나보세요!</p>
+                <span class="section-flag" style="background-color:#5898D6 ">EVENT 1</span>
+                <strong class="section-title">라네즈 세트 상품 구매시 40% 할인</strong>
+                <p class="section-note">세트 구성으로 구매시 40% 할인</p>
             </div>
-            <div class="product">
-                <div class="product__swiper swiper">
-                    <ul class="product__list swiper-wrapper">
+            <div class="brand">
+                <ul class="brand__list">
+                    <li>
+                        <button type="button" class="active">라네즈</button>
+                    </li>
+                    <li>
+                        <button type="button">헤라</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-group">
+                <div class="product-group__swiper swiper">
+                    <ul class="product-group__list swiper-wrapper">
                         <li class="swiper-slide">
                             <a href="" class="area-thumb">
                                 <img src="./static/images/product-img01.png" alt="">
                                 <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
                             </a>
-                            <a href="">
+                            <a href="" class="area-text">
                                 <span>라네즈 네오 에센셜 블러링 피니시 파우더</span>
                                 <div>
-                                    <span>70%</span>
-                                    <span><strong>$11.7</strong>$30</span>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
                                 </div>
                             </a>
                         </li>
@@ -206,11 +218,13 @@
                                 <img src="./static/images/product-img04.png" alt="">
                                 <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
                             </a>
-                            <a href="">
+                            <a href="" class="area-text">
                                 <span>래디언-C 더블 액티브 브라이트닝 에센스</span>
                                 <div>
-                                    <span>70%</span>
-                                    <span><strong>$11.7</strong>$30</span>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
                                 </div>
                             </a>
                         </li>
@@ -219,11 +233,13 @@
                                 <img src="./static/images/product-img05.png" alt="">
                                 <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
                             </a>
-                            <a href="">
+                            <a href="" class="area-text">
                                 <span>라네즈 워터슬리핑마스크 EX 70ml</span>
                                 <div>
-                                    <span>70%</span>
-                                    <span><strong>$11.7</strong>$30</span>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
                                 </div>
                             </a>
                         </li>
@@ -232,11 +248,13 @@
                                 <img src="./static/images/product-img02.png" alt="">
                                 <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
                             </a>
-                            <a href="">
+                            <a href="" class="area-text">
                                 <span>라네즈 크림스킨 170ml</span>
                                 <div>
-                                    <span>70%</span>
-                                    <span><strong>$11.7</strong>$30</span>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
                                 </div>
                             </a>
                         </li>
@@ -245,11 +263,13 @@
                                 <img src="./static/images/product-img06.png" alt="">
                                 <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
                             </a>
-                            <a href="">
+                            <a href="" class="area-text">
                                 <span>라네즈 스킨베일 베이스 EX_40호 듀오 세트</span>
                                 <div>
-                                    <span>70%</span>
-                                    <span><strong>$11.7</strong>$30</span>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
                                 </div>
                             </a>
                         </li>
@@ -258,11 +278,50 @@
                                 <img src="./static/images/product-img03.png" alt="">
                                 <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
                             </a>
-                            <a href="">
+                            <a href="" class="area-text">
                                 <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
                                 <div>
-                                    <span>70%</span>
-                                    <span><strong>$11.7</strong>$30</span>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
                                 </div>
                             </a>
                         </li>
@@ -271,6 +330,216 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+        </section>
+        <section class="section-item event">
+            <div class="section-text__box">
+                <span class="section-flag" style="background-color:#5898D6 ">EVENT 1</span>
+                <strong class="section-title">설화수, 헤라 세트 상품 40% 할인</strong>
+                <p class="section-note">세트 구성으로 구매시 40% 할인</p>
+            </div>
+            <div class="brand">
+                <ul class="brand__list">
+                    <li>
+                        <button type="button" class="active">설화수</button>
+                    </li>
+                    <li>
+                        <button type="button">헤라</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-group">
+                <div class="product-group__swiper swiper">
+                    <ul class="product-group__list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img01.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 네오 에센셜 블러링 피니시 파우더</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img04.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>래디언-C 더블 액티브 브라이트닝 에센스</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img05.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터슬리핑마스크 EX 70ml</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img02.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 크림스킨 170ml</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img06.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 스킨베일 베이스 EX_40호 듀오 세트</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">
+                                        $11.7<span>$30</span>
+                                    </strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="area-thumb">
+                                <img src="./static/images/product-img03.png" alt="">
+                                <button type="button" class="btn-basket" aria-label="장바구니 담기"></button>
+                            </a>
+                            <a href="" class="area-text">
+                                <span>라네즈 워터뱅크 블루 히알루로닉 모이스춰 크림</span>
+                                <div>
+                                    <span class="discount">70%</span>
+                                    <strong class="price">$11.7 <span>$30</span></strong>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section-item relatedBrand">
+            <div class="relatedBrand__box">
+                <ul class="relatedBrand__list">
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon01.png" alt="">
+                            <span class="brand-item__name">라네즈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon04.png" alt="">
+                            <span class="brand-item__name">오쏘몰</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon05.png" alt="">
+                            <span class="brand-item__name">센트롬</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon02.png" alt="">
+                            <span class="brand-item__name">온누리스토어</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon06.png" alt="">
+                            <span class="brand-item__name">헤어메스</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon07.png" alt="">
+                            <span class="brand-item__name">지앤씨(수입)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./static/images/brand-icon03.png" alt="">
+                            <span class="brand-item__name">솔가</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="notice-area">
+            <strong class="notice__txt">유의사항</strong>
+            <ul class="notice__list">
+                <li><span>한 ID당 1일 1회 증정됩니다.</span></li>
+                <li><span>사은품은 중복 증정이 되지 않습니다.</span></li>
+                <li><span>사은품은 디자인 및 구성이 임의로 증정되며, 선택할 수 없습니다.</span></li>
+                <li class="ess"><span>사은품의 제고 소진 이후에도 해당 페이지와 관련 배너는 보여질 수 있습니다.</span></li>
+            </ul>
         </section>
     </main>
 
@@ -319,6 +588,7 @@
     });
 
 
+/*
     const brandSwiperList = document.querySelectorAll('.brand__swiper li')
     const slideLength = 6;
     if(brandSwiperList.length>slideLength){
@@ -341,38 +611,28 @@
                 prevEl: ".brand .swiper-button-prev",
             },
             on:{
-               /* init:function(){
+               /!* init:function(){
                     handleSlide(this);
                 },
                 slideChangeTransitionEnd:function(){
                     stopAllVideos(this);
                     handleSlide(this)
-                },*/
+                },*!/
             }
         })
     }
+*/
 
 
 
-    const brandSwiper = new Swiper('.product__swiper',{
-        //slidesPerView: slideLength,
+    const brandSwiper = new Swiper('.product-group__swiper',{
         spaceBetween:20,
         grid: {
             rows: 2,
-            fill: 'row' // 또는 'column' (행 우선 채우기)
+            fill: 'row'
         },
-
-        breakpoints: {
-            // when window width is >= 640px
-            320: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-            },
-            1000:{
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-            }
-        },
+        slidesPerView: 3,
+        slidesPerGroup: 3,
         pagination: {
             el: ".product .swiper-pagination",
             type: "progressbar",

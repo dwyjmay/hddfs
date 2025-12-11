@@ -13,7 +13,9 @@ html 구조
 //var
 $black :#222;
 $gray : #eee;
+$darkgray:#aaa;
 $white :#fff;
+$red :#ea2829;
 $pc-layout:1356px;
 //$pc-contents:1200px;
 
@@ -95,7 +97,7 @@ header{
           &:before{
             content: ''; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
             width: 1px; height:0.8em;
-            background: #aaa;
+            background: $darkgray
           }
         }
       }
@@ -216,7 +218,7 @@ header{
           }
 
           &::-webkit-scrollbar-thumb:hover {
-            background: #aaa;
+            background: $darkgray;
           }
 
           // 스크롤 버튼(상/하 화살표) 완전 제거
@@ -309,10 +311,10 @@ header{
     }
   }
 }
-.event-item{
+.section-item{
+  padding-bottom: 80px;
   .section-text__box{
     display: flex; flex-direction: column; align-items: center; gap:10px;
-    margin-top: 30px;
     .section-flag{
       padding:4px 8px;
       color:#fff; font-size: 12px; border-radius: 20px;
@@ -329,11 +331,154 @@ header{
       @include ellipsis(2);
     }
   }
-  +.event-item{
-    margin-top: 120px;
+  &:first-of-type{
+    padding-top:40px;
+  }
+  +.section-item{
+    padding-top:80px;
   }
 }
-#eventItem01{
+
+.section-item.event{
+  .brand{
+    margin: 20px auto 0;
+    &__list{
+      display: flex; gap:8px; justify-content: center;
+      li{
+        button{
+          display: flex; gap: 0px; align-items:center;
+          position: relative; padding:4px 8px 4px 12px;
+          border:1px solid $gray; border-radius: 20px;
+          transition: 0.4s all ease-in-out;
+          &:after{
+            content: ''; display: block;
+            width: 20px; height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z' fill='%23aaaF'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &:hover{
+            background:$gray;
+          }
+          &.active{
+            background:$black;
+            font-weight: 600; color:#fff;
+            &:after{
+              background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z' fill='%23ffffff'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-group{
+    position: relative;
+    width: min(100%,880px);
+    margin: 40px auto 0; padding: 0 40px;
+    .swiper-pagination{top:auto; bottom: 0; left: 50%;transform: translateX(-50%); width: 30%;}
+    .swiper-pagination-progressbar-fill{background: $black}
+
+    &__list{
+      li{
+        display: flex; flex-direction: column; align-items: center;
+        .area-thumb{
+          position: relative; max-width: 200px;
+          border-bottom-right-radius: 8px; overflow: hidden;
+          .btn-basket{
+            width: 40px; height: 40px;
+            position: absolute; bottom: 0; right: 0;
+            background:rgba(165, 165, 165, 0.65) url("data:image/svg+xml,%3Csvg fill='%23ffffff' width='235px' height='235px' viewBox='-2.24 -2.24 36.48 36.48' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M27 4.96h-5.975v-1.918c0-1.655-1.346-3-3-3h-3.989c-1.655 0-3 1.345-3 3v1.918h-6.037c-1.104 0-2 0.896-2 2v22.999c0 1.105 0.896 2 2 2h22c1.105 0 2-0.895 2-2v-22.999c0-1.104-0.895-2-2-2h0zM13.037 3.042c0-0.552 0.448-1 1-1h3.989c0.552 0 1 0.448 1 1v1.918h-5.989v-1.918zM27 29.959h-22v-22.999h6.037v2.058s-0.027 0.999 0.994 0.999c1.125 0 1.006-0.999 1.006-0.999v-2.058h5.989v2.058s-0.067 1.004 0.996 1.004c1 0 1.004-1.004 1.004-1.004v-2.058h5.974v22.999z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E") no-repeat center / 60%;
+            border-radius: 8px;
+          }
+        }
+        .area-text{
+          margin-top:10px;
+          > span{
+            @include ellipsis(2)
+          }
+          div{
+            display: flex;gap: 4px; margin-top: 4px;
+            .discount{font-weight: 600}
+            .price{
+              display: flex; gap:2px; align-items: center;
+              color:$red;
+              span{color:$darkgray; font-size: 12px; text-decoration-line: line-through}
+            }
+
+          }
+        }
+      }
+    }
+
+
+
+  }
+  +.event{
+    padding-top:0;
+  }
+}
+.section-item.relatedBrand{
+  background:$gray;
+  .relatedBrand{
+    &__list{
+      display: flex; justify-content: center; gap:20px; flex-wrap: wrap;
+      width: 60%; margin: 0 auto;
+      li{
+        width: calc((100% - (20px * 5)) / 6);
+        a{
+          display: flex;flex-direction: column; gap:4px; align-items: center;
+          border-radius: 20px;
+          img{transition: 0.2s all; border-radius: 12px;}
+
+          span{
+            font-size: 12px;
+          }
+          &:hover img{
+            box-shadow:0 4px 8px #c5c5c5;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+.notice-area{
+  margin:40px 20px 0;
+  padding:40px 0;
+  .notice__txt{
+    position: relative; display: flex; gap:8px; align-items: center;
+    font-size: 16px;
+    &:before{
+      content: '!'; display: block;
+      width: 16px; height: 16px;
+      background:$darkgray; color:$white; text-align: center; line-height: 16px; font-size: 12px;
+      border-radius: 100%;
+    }
+  }
+  .notice__list{
+    margin-top:10px;
+    li{
+      position: relative; padding-left: 14px;
+      span{font-size: 12px;}
+      &:before{
+        content: ''; display: block; position: absolute;
+        width: 4px; height: 4px;
+        top:0.8em; left: 4px; transform: translateY(-50%);
+        border-radius: 100%; background: $darkgray;
+      }
+      &.ess{
+        span{color:$red;}
+        &:before{background: $red;}
+      }
+      + li{ margin-top:4px;}
+
+    }
+
+  }
+
+}
+#eventItem00{
   .brand{
     position: relative;
     width: 70%;
@@ -358,31 +503,5 @@ header{
         font-size: 12px;
       }
     }
-  }
-}
-#eventItem02{
-  .product{
-    position: relative;
-    width: 50%;
-    margin: 40px auto 0; padding: 0 40px 20px;
-    .swiper-pagination{top:auto; bottom: 0; left: 50%;transform: translateX(-50%); width: 30%;}
-    .swiper-pagination-progressbar-fill{background: $black}
-
-    &__list{
-      li{
-        display: flex; flex-direction: column;
-        .area-thumb{
-          position: relative; max-width: 200px;
-          .btn-basket{
-            width: 40px; height: 40px;
-            position: absolute; bottom: 0; right: 0;
-            background: blue;
-          }
-        }
-      }
-    }
-
-
-
   }
 }
